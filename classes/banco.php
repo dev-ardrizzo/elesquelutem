@@ -1,4 +1,5 @@
 <?php
+
 class Banco {
 
 	private $pdo;
@@ -83,4 +84,10 @@ class Banco {
 
 
 }
+session_start();
+
+if(empty($banco)) {
+	$banco = new Banco("localhost", "elesquelutem", "root", "");
+}
+
 ?>
