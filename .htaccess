@@ -18,3 +18,4 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 RewriteRule ^login(.*)$ php/login.php
 RewriteRule ^dashboard(.*)$ php/dashboard.php
+RewriteRule ^ticket(.*)$ php/ticket.php

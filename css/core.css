@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+body {
+  font-family: 'Lato', sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #F30067; }
+
+h1 {
+  font-weight: 900; }
+
+input[type="text"], select {
+  padding: 15px; }
+
+span.ticket {
+  border-radius: 5px;
+  background: #F30067;
+  padding: 5px;
+  font-weight: 500;
+  color: white;
+  font-size: 10px;
+  margin: 2px;
+  text-transform: uppercase; }
+
+#requests {
+  display: flex; }
+  #requests .user-requests {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0px 0px 40px 1px #0000001c;
+    padding: 15px;
+    margin: 15px;
+    text-decoration: none; }
+
+/*# sourceMappingURL=core.scss.map */
+
+/*# sourceMappingURL=core.css.map */

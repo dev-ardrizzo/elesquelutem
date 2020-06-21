@@ -1,8 +1,6 @@
 <?php
-
-// Handle or file that contain the core
+// Handle or file that connects to the bank 
 require $_SERVER['DOCUMENT_ROOT']."/elesquelutem/php/core.php";
-
 ?>
 
 <form id="login" method="POST">
@@ -16,8 +14,4 @@ require $_SERVER['DOCUMENT_ROOT']."/elesquelutem/php/core.php";
 </form>
 
 
-<?php
-
-$login = new login();
-
-?>
+<?php $login = new login; ?>

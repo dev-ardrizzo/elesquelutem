@@ -1,18 +1,8 @@
-
-<?php
-
-// Handle or file that contain the core
-require $_SERVER['DOCUMENT_ROOT']."/elesquelutem/php/core.php";
-
-?>
-
-
-<h1>Lado Cliente</h1>
+<?php $request = new request(); ?>
 
 
 <form id="login" method="POST">
 
-    <h1>Faça seu login</h1>
 	<input type="text" name="requestsContent" placeholder="O que voce deseja?" />
 
     <select name="requestsTime" id="">
@@ -23,12 +13,13 @@ require $_SERVER['DOCUMENT_ROOT']."/elesquelutem/php/core.php";
 
 	<input type="submit" value="Entrar">
 
+    <?php $request->insert();?>
+
 </form>
 
 
-<?php
 
-    $request = new request();
-    $request->insert();
 
-?>
+<section id="requests">
+    <?php $request->userRequests();?>
+</section>   

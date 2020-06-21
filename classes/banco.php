@@ -84,10 +84,5 @@ class Banco {
 
 
 }
-session_start();
-
-if(empty($banco)) {
-	$banco = new Banco("localhost", "elesquelutem", "root", "");
-}
-
+$banco = new Banco("localhost", "elesquelutem", "root", "");
 ?>
